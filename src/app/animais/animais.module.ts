@@ -7,6 +7,8 @@ import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
 import { AnimalComponent } from './animal/animal.component';
 import { GradeFotosAnimaisComponent } from './grade-fotos-animais/grade-fotos-animais.component';
 import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
+import { ComentariosComponent } from './detalhe-animal/comentarios/comentarios.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.componen
     AnimalComponent,
     GradeFotosAnimaisComponent,
     CartaoComponent,
-    DetalheAnimalComponent
+    DetalheAnimalComponent,
+    ComentariosComponent
   ],
   imports: [
     CommonModule,
-    AnimaisRoutingModule
+    AnimaisRoutingModule,
+    SharedModule
   ]
 })
 export class AnimaisModule { }
